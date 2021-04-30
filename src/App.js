@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Html from "./Html";
 import Css from "./Css";
 import Javascript from "./Javascript";
+import ReactJs from "./ReactJs";
 function App() {
   return (
     <div className="App">
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/javascript">
             <Javascript />
+          </Route>
+          <Route path="/React">
+            <ReactJs />
           </Route>
         </Switch>
       </Router>

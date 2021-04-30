@@ -19,6 +19,9 @@ function Header() {
         <Link to="/javascript">
           <h1>javaScript</h1>
         </Link>
+        <Link to="/react">
+          <h1>React</h1>
+        </Link>
       </NavRight>
     </Container>
   );
