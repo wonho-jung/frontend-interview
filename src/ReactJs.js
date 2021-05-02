@@ -1,9 +1,38 @@
 import React from "react";
 import styled from "styled-components";
+import dom from "./assets/dom.JPG";
+import state from "./assets/state.JPG";
+import mount from "./assets/mount.JPG";
+import unmount from "./assets/unmount.JPG";
+import update from "./assets/update.JPG";
 
 function ReactJs() {
   return (
     <Container>
+      <Qbox>
+        <h1>What is React?</h1>
+        <Answer>
+          <ul>
+            <li>
+              React is a front-end JavaScript library developed by Facebook in
+              2011.
+            </li>
+            <li>
+              It follows the component based approach which helps in building
+              reusable UI components.
+            </li>
+            <li>
+              It is used for developing complex and interactive web and mobile
+              UI.
+            </li>
+            <li>
+              Even though it was open-sourced only in 2015, it has one of the
+              largest communities supporting it.
+            </li>
+          </ul>
+        </Answer>
+      </Qbox>
+
       <Qbox>
         <h1>Features of ReactJS</h1>
         <ul>
@@ -72,6 +101,10 @@ function ReactJs() {
           JSX is an extension to javascript. It is a template script where you
           will have the power of using HTML and Javascript together.
         </p>
+        <p>
+          JSX stands for JavaScript XML. JSX allows us to write HTML in React.
+          JSX makes it easier to write and add HTML in React.
+        </p>
       </Qbox>
       <Qbox>
         <h1>What are Props in ReactJS?</h1>
@@ -81,13 +114,47 @@ function ReactJs() {
         </p>
       </Qbox>
       <Qbox>
-        <h1>Life Cycle of a Component</h1>
-        <p>
-          A component life cycle is divided into Initialization, Mounting,
-          Update, and UnMounting stages. Here is a detail explanation about each
-          Component.
-        </p>
+        <h1>Differentiate between Real DOM and Virtual DOM.</h1>
+        <img src={dom} alt="" />
       </Qbox>
+      <Qbox>
+        <h1>What is a state in React and how is it used?</h1>
+        <Answer>
+          <p>
+            States are the heart of React components. States are the source of
+            data and must be kept as simple as possible. Basically, states are
+            the objects which determine components rendering and behavior. They
+            are mutable unlike the props and create dynamic and interactive
+            components. They are accessed via this.state().
+          </p>
+        </Answer>
+      </Qbox>
+      <Qbox>
+        <h1>Differentiate between states and props.</h1>
+        <Answer>
+          <img src={state} alt="" />
+        </Answer>
+      </Qbox>
+      <Qbox>
+        <h1>What are React lifecycle methods?</h1>
+        <p>Mounting – Birth of your component</p>
+        <p>Update – Growth of your component</p>
+        <p>Unmount – Death of your component</p>
+      </Qbox>
+      <h3>componentDidMount()</h3>
+      <img src={mount} alt="" />
+      <h3>componentDidUpdate()</h3>
+      <img src={update} alt="" />
+      <p>useEffect()</p>
+      <p>
+        It serves the same purpose as componentDidMount, componentDidUpdate,
+        componentWillUnmount in React classes. This is a good place to perform
+        functions like data fetching, subscriptions or manually changing the DOM
+        from React components before.
+      </p>
+
+      <h3>componentWillUnmount()</h3>
+      <img src={unmount} alt="" />
     </Container>
   );
 }

@@ -4,6 +4,8 @@ import ex from "./assets/ex.JPG";
 import varlet from "./assets/varlet.JPG";
 import varlet2 from "./assets/varlet2.JPG";
 import destructuring from "./assets/destructuring.JPG";
+import promise from "./assets/promise.JPG";
+import when from "./assets/when.JPG";
 function Javascript() {
   return (
     <Container>
@@ -79,7 +81,7 @@ function Javascript() {
           original array, .map() is the clear choice. If you simply need to
           iterate over an array, forEach is a fine choice.
         </p>
-        <p></p>
+        <img src={when} alt="" />
       </Answer>
       <Qbox>
         Difference between: function Person(){}, var person = Person(), and var
@@ -163,7 +165,7 @@ function Javascript() {
             function duplicate(arr) {"return arr.concat(arr);"} duplicate([1, 2,
             3, 4, 5]);
           </p>
-          <p>const duplicate((arr)=> [...arr, ...arr])</p>
+          <p>"const duplicate((arr)=> [...arr, ...arr])"</p>
         </Answer>
       </Qbox>
       <Qbox>
@@ -197,6 +199,12 @@ function Javascript() {
           Can you give an example for destructuring an object or an array?
         </h1>
         <img src={destructuring} alt="" />
+      </Qbox>
+      <Qbox>
+        <h1>Difference of using async / await vs promises?</h1>
+        <Answer>
+          <img src={promise} alt="" />
+        </Answer>
       </Qbox>
     </Container>
   );

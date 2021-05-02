@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-
+import bem from "./assets/bem.JPG";
 function Css() {
   const [float, setFloat] = useState("left");
   return (
@@ -99,6 +99,22 @@ function Css() {
             such as variables, nesting, inheritance, mixins, functions, and
             mathematical operations.
           </p>
+        </Answer>
+      </Qbox>
+      <Qbox>
+        <h1>
+          What is and why to use the Block Element Modifier (BEM) convention?
+        </h1>
+        <Answer>
+          <ul>
+            <li>It communicates purpose or function</li>
+            <li>It communicates component structure</li>
+            <li>
+              It sets a consistent low-level of specificity for styling
+              selectors
+            </li>
+          </ul>
+          <img src={bem} alt="" />
         </Answer>
       </Qbox>
     </Container>
