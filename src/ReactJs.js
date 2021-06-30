@@ -85,6 +85,18 @@ function ReactJs() {
             rather than on Html.
           </li>
         </ul>
+        <ul>
+          <li>Increases the application’s performance with Virtual DOM</li>
+          <li>JSX makes code is easy to read and write</li>
+          <li>It renders both on client and server side</li>
+          <li>
+            Easy to integrate with other frameworks (Angular, BackboneJS) since
+            it is only a view library
+          </li>
+          <li>
+            Easy to write UI Test cases and integration with tools such as JEST.
+          </li>
+        </ul>
         <h1>Disadvantages of ReactJS</h1>
         <ul>
           <li>
@@ -140,21 +152,41 @@ function ReactJs() {
         <p>Mounting – Birth of your component</p>
         <p>Update – Growth of your component</p>
         <p>Unmount – Death of your component</p>
-      </Qbox>
-      <h3>componentDidMount()</h3>
-      <img src={mount} alt="" />
-      <h3>componentDidUpdate()</h3>
-      <img src={update} alt="" />
-      <p>useEffect()</p>
-      <p>
-        It serves the same purpose as componentDidMount, componentDidUpdate,
-        componentWillUnmount in React classes. This is a good place to perform
-        functions like data fetching, subscriptions or manually changing the DOM
-        from React components before.
-      </p>
+        <h3>componentDidMount()</h3>
+        <img src={mount} alt="" />
+        <h3>componentDidUpdate()</h3>
+        <img src={update} alt="" />
+        <p>useEffect()</p>
+        <p>
+          It serves the same purpose as componentDidMount, componentDidUpdate,
+          componentWillUnmount in React classes. This is a good place to perform
+          functions like data fetching, subscriptions or manually changing the
+          DOM from React components before.
+        </p>
 
-      <h3>componentWillUnmount()</h3>
-      <img src={unmount} alt="" />
+        <h3>componentWillUnmount()</h3>
+        <img src={unmount} alt="" />
+      </Qbox>
+      <Qbox>
+        <h1>What is the need of Redux OR Why we use Redux?</h1>
+        <p>
+          Suppose, you need to pass data in between such components that don't
+          have any relationship (parent-child), so while making communication
+          between such components, it is difficult to pass data and maintaining
+          them is also a very difficult task.
+        </p>
+      </Qbox>
+      <Qbox>
+        <h1>What are the benefits of using Redux?</h1>
+        <ul>
+          <li>Single-Source of Truth</li>
+          <li>Predictable States</li>
+          <li>Easy to Maintain</li>
+          <li>Reusable Code</li>
+          <li>No need to uplift State</li>
+          <li>Easy to Debug</li>
+        </ul>
+      </Qbox>
     </Container>
   );
 }

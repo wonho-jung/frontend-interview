@@ -25,6 +25,9 @@ function App() {
           <Route path="/React">
             <ReactJs />
           </Route>
+          <Router path="/After">
+            <Interview />
+          </Router>
         </Switch>
       </Router>
     </div>
