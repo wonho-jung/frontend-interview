@@ -159,7 +159,6 @@ function Javascript() {
       </Qbox>
 
       <Qbox>
-        <h1>test</h1>
         <h1>duplicate([1,2,4,5,6]) => output [1,2,3,4,5,1,2,3,4,5]</h1>
         <Answer>
           <p>
