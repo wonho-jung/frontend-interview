@@ -159,6 +159,7 @@ function Javascript() {
       </Qbox>
 
       <Qbox>
+        <h1>test</h1>
         <h1>duplicate([1,2,4,5,6]) => output [1,2,3,4,5,1,2,3,4,5]</h1>
         <Answer>
           <p>
@@ -205,6 +206,27 @@ function Javascript() {
         <Answer>
           <img src={promise} alt="" />
         </Answer>
+      </Qbox>
+      <Qbox style={{ display: "flex" }}>
+        <div style={{ padding: "10px" }}>
+          <h1>Primitive</h1>
+          <ul>
+            <li>number</li>
+            <li>String</li>
+            <li>Boolean</li>
+            <li>Null</li>
+            <li>Undefined</li>
+            <li>Symbol</li>
+          </ul>
+        </div>
+        <div style={{ padding: "10px" }}>
+          <h1>Object</h1>
+          <ul>
+            <li>Object</li>
+            <li>Array</li>
+            <li>Function</li>
+          </ul>
+        </div>
       </Qbox>
     </Container>
   );

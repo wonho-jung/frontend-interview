@@ -22,6 +22,9 @@ function Header() {
         <Link to="/react">
           <h1>React</h1>
         </Link>
+        <Link to="/After">
+          <h1>interview</h1>
+        </Link>
       </NavRight>
     </Container>
   );

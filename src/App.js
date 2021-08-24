@@ -6,6 +6,7 @@ import Html from "./Html";
 import Css from "./Css";
 import Javascript from "./Javascript";
 import ReactJs from "./ReactJs";
+import Interview from "./Interview";
 function App() {
   return (
     <div className="App">
